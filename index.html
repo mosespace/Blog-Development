@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mosespace | Blog</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://mosespace.github.io">
+	<link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+	<meta name='robots' content='noindex, follow' />
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="style.css">
+
+</head>    
+<body>
+    <header>
+    <!-- This is the style for the naviagtion bar -->
+        <div class="container">
+            <div class="navigation">
+        <!--<img src="images/logo.png" class="logo">-->
+                <h3>Moses |Blog</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="">Engineering</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Open Source</a></li>
+                            <li><a href="">Enterprise</a></li>
+
+                                <div class="dropdown">
+                                    <button>More</button>
+                                        <div class="dropdown-options">
+                            <a href="#">Community</a>
+                            <a href="#">Education</a>
+                            <a href="#">Policy</a>
+                            <a href="#">Liceince</a>
+                                        </div> 
+                                </div>
+                                <img src="images/moon.png" id="icon">  
+            </div>
+                        </ul>
+                    
+        </nav>
+        
+        </div>
+    </div>
+    </header>
+ <!-- This is a javascript code to make the toggle of dark and light mode  -->
+    <script>
+
+        var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme")
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="images/moon.png";
+           } else{ 
+            icon.src="images/sun.png";
+           }
+    }
+    </script>
+
+    <!-- This is the style for the main body content  -->
+    <div class="row">
+        <div class="col-1">
+            <h2>Hello  From<br> Moses Daniel</h2>
+            <h3>The official blog maintainer and owner</h3>
+            <p>Github Lover</p>
+            <h4>GitHub is in an exciting phase of our journey as the developer community grows significantly every day, 
+            and the needs of the community grow and change with it. 
+            Today am introducing our this new open source project!!!</h4>
+            <div class="col-img1">
+           <!-- <img src="images/man.png">  -->
+        </div>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+
+
+    <!-- This is the the footer part  -->
+    
+</body>
+</html>
