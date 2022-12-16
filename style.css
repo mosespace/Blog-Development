@@ -14,12 +14,38 @@
     --secondary-color: #fff;
 }
 
+@media only screen and (max-width: 700px) 
+{
+        nav ul{
+            font-size: 10px;
+            width: 100%;
+            position: absolute;
+            top: 75px;
+            right: 0;
+            z-index: 2;
+        }
+        
+        .menu{
+            display: block;
+        }
+        #menuList{
+            overflow: hidden;
+            transform: 0.5s;
+        }
+}
+
 #icon{
     width: 30px;
     cursor: pointer;
     padding: 20px;
     vertical-align: middle;
     padding-top: 17px;
+}
+
+.menu {
+    width: 30px;
+    cursor: pointer;
+    display: none;
 }
 
 header{
