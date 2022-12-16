@@ -19,7 +19,7 @@
         <!--<img src="images/logo.png" class="logo">-->
                 <h3>Moses |Blog</h3>
                     <nav>
-                        <ul>
+                        <ul id="menuList">
                             <li><a href="">Engineering</a></li>
                             <li><a href="">Security</a></li>
                             <li><a href="">Products</a></li>
@@ -36,7 +36,7 @@
                                         </div> 
                                 </div>
                                 <img src="images/moon.png" id="icon"> 
-                                <img src="images/menuorange.png" id="menu-icon">  
+                                <img src="images/menuorange.png" class="menu" onclick="togglemenu()">  
             </div>
                         </ul>
                     
@@ -57,6 +57,21 @@
            } else{ 
             icon.src="images/sun.png";
            }
+    }
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight ="opx";
+
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight == "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight == "0px"
+            }
     }
     </script>
 
