@@ -14,10 +14,24 @@
     --secondary-color: #fff;
 }
 
-@media screen and (max-width: 600px) 
+@media only screen and (max-width: 700px) 
 {
-
-
+        nav ul{
+            font-size: 10px;
+            width: 100%;
+            position: absolute;
+            top: 75px;
+            right: 0;
+            z-index: 2;
+        }
+        
+        .menu{
+            display: block;
+        }
+        #menuList{
+            overflow: hidden;
+            transform: 0.5s;
+        }
 }
 
 #icon{
@@ -28,11 +42,10 @@
     padding-top: 17px;
 }
 
-#menu-icon {
+.menu {
     width: 30px;
     cursor: pointer;
-    vertical-align: middle;
-    padding-top: 3px;
+    display: none;
 }
 
 header{
