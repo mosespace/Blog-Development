@@ -14,12 +14,25 @@
     --secondary-color: #fff;
 }
 
+@media screen and (max-width: 600px) 
+{
+
+
+}
+
 #icon{
     width: 30px;
     cursor: pointer;
     padding: 20px;
     vertical-align: middle;
     padding-top: 17px;
+}
+
+#menu-icon {
+    width: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-top: 3px;
 }
 
 header{
